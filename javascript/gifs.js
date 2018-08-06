@@ -1,16 +1,16 @@
+//Click even to add button
+
 $("#addFood").click(function () {
 
     newButtonText = $("#food-input").val();
 
-    newButton = $("<button>" + newButtonText + "</button>");
-
-    newButton.attr("class", "buttons");
+    newButton = $("<button class='buttons'>" + newButtonText + "</button>");
 
     $(".button-container").append(newButton);
 
 });
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
 
-});
+// });
