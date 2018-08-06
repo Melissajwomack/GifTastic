@@ -1,0 +1,158 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../images/foodbackground.jpg);
+    font-family: 'Fredoka One', 'cursive';
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: 65px;
+    width: 100%;
+    background-color: #89a8e2;
+    padding: 0em;
+    z-index: 1;
+    color: #ffdd4a;
+    border-bottom: 1.5px solid #893600;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    top: 1em;
+    margin-left: 15em;
+}
+
+.buttons-sidebar {
+    position: fixed;
+    top: 65px;
+    width: 25%;
+    height: 100%;
+    background-color: #ffdd4a;
+    padding: 0.25em;
+    color: #893600;
+    border-right: 1.5px solid #893600;
+    text-align: center;
+}
+
+.buttons-title {
+    margin: 0.5em;
+}
+
+form {
+    position: relative;
+    top: 0;
+    padding: 0.5em;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+hr {
+    margin: 0.75em;
+    border: 1px #893600 solid;
+}
+
+#addFood {
+    background-color: #893600;
+    border: 1.5px #893600 solid;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    color: #fff4c8;
+    font-weight: bold;
+    margin-top: 0.5em;
+}
+
+.buttons {
+    background-color: #893600;
+    border: 1.5px #893600 solid;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    color: #fff4c8;
+    font-weight: bold;
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+#food-input {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1.5px solid #893600;
+    background-color: #fff4c8;
+    color: #893600;
+    margin-top: 0.5em;
+}
+
+.button-container {
+    position: relative;
+    top: 0.5em;
+    padding: 0.5em;
+    height: 100%;
+}
+
+.gif-container {
+    float: right;
+    background: transparent;
+    padding: 2em;
+    width: 68%;
+    position: relative;
+    top: 65px;
+    height: 70em;
+}
+
+@media screen and (max-width: 680px) {
+
+    header {
+    height: 40px;
+    }
+
+    .title {
+    top: 0.4em;
+    margin-left: 21%;
+    font-size: 0.75em;
+    }
+
+    .buttons-sidebar {
+        top: 40px;
+        width: 21%;
+        font-size: 0.8em;
+    }
+
+    hr {
+        margin: 0.6em;
+    }
+    #food-form {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        font-size: 0.75em;
+    }
+
+    #food-input {
+        width: 80%;
+        margin-bottom: 0.5em;
+    }
+
+    .button-container {
+        padding: 0;
+        text-align: center;
+    }
+
+    .buttons {
+        margin: 0.5em 0 0.5em 0;
+        font-size: 0.5em;
+    }
+
+    .gif-container {
+        top: 40px;
+        width:71%;
+        padding: 0.5em;
+    }
+}
