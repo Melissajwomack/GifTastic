@@ -34,7 +34,7 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             var results = response.data
-            console.log(results);
+
             for (var i = 0; i < results.length; i++) {
                 var newDiv = $("<div>");
                 var newImgDiv = $("<img>");
@@ -46,8 +46,6 @@ $(document).ready(function () {
                 newImgDiv.attr("data-still", results[i].images.fixed_height_still.url);
                 newImgDiv.attr("data-animate", results[i].images.fixed_height.url);
                 newImgDiv.attr("class", "gif");
-
-                console.log(newImgDiv);
 
                 newRatingDiv.html(
                     "<u>Rating:</u> " + results[i].rating + "<br>" + "<u>Title:</u> " + results[i].title + "<br>"
