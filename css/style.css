@@ -120,13 +120,8 @@ p {
     margin: 0.5em;
 }
 
-a {
-    color: #ffdd4a;
-    cursor: pointer;
-}
-
 .newDiv {
-    background-color: rgb(137, 168, 226, 0.8);
+    background-color: rgb(137, 168, 226);
     border: 1px solid #893600;
     margin: 1.5em;
     text-align: center;
