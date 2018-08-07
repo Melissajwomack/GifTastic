@@ -24,6 +24,7 @@ $(document).ready(function () {
         $("#food-input").val("");
     });
 
+    //What happens when you click a button
     $(document.body).on("click", ".buttons", function () {
         var food = $(this).attr("data-food");
         var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + food + "&api_key=dGfiE2c3mUZUhNtQ99HWn3qzCDW1GTir&limit=10";
@@ -62,6 +63,7 @@ $(document).ready(function () {
         });
     });
 
+    //Animate gifs on clicking them
     $(document.body).on("click", ".gif", function () {
         var state = $(this).attr("data-state");
         if (state === "animate") {
