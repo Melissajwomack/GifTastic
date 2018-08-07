@@ -7,6 +7,7 @@
 
 body {
     background-image: url(../images/foodbackground.jpg);
+    background-attachment: fixed;
     font-family: 'Fredoka One', 'cursive';
 }
 
@@ -30,14 +31,15 @@ header {
 
 .buttons-sidebar {
     position: fixed;
-    top: 65px;
-    width: 25%;
+    top: 67px;
     height: 100%;
+    width: 25%;
     background-color: #ffdd4a;
     padding: 0.25em;
     color: #893600;
     border-right: 1.5px solid #893600;
     text-align: center;
+    z-index: 1;
 }
 
 .buttons-title {
@@ -59,6 +61,11 @@ hr {
     border: 1px #893600 solid;
 }
 
+.hr2 {
+    margin: 0;
+    border: 0.5px #893600 solid;
+}
+
 #addFood {
     background-color: #893600;
     border: 1.5px #893600 solid;
@@ -67,17 +74,19 @@ hr {
     color: #fff4c8;
     font-weight: bold;
     margin-top: 0.5em;
+    cursor: copy;
 }
 
 .buttons {
     background-color: #893600;
     border: 1.5px #893600 solid;
     border-radius: 0.5em;
-    padding: 0.5em;
+    padding: 0.4em;
     color: #fff4c8;
     font-weight: bold;
-    margin: 0.5em;
-    font-size: 1em;
+    margin: 0.2em;
+    font-size: 0.7em;
+    cursor: pointer;
 }
 
 #food-input {
@@ -93,7 +102,7 @@ hr {
     position: relative;
     top: 0.5em;
     padding: 0.5em;
-    height: 100%;
+    margin: 0.1em;
 }
 
 .gif-container {
@@ -102,16 +111,31 @@ hr {
     padding: 2em;
     width: 68%;
     position: relative;
-    top: 65px;
+    top: 47px;
     height: 70em;
 }
 
 p {
     color: #893600;
+    margin: 0.5em;
+}
+
+a {
+    color: #ffdd4a;
+    cursor: pointer;
 }
 
 .newDiv {
-    display: inline;
+    background-color: rgb(137, 168, 226, 0.8);
+    border: 1px solid #893600;
+    margin: 0.3em;
+    display: inline-flex;
+}
+
+img {
+    border:1px solid #893600;
+    margin: 0.7em;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 680px) {
@@ -126,7 +150,7 @@ p {
     }
 
     .buttons-sidebar {
-        top: 40px;
+        top: 42px;
         width: 21%;
         font-size: 0.8em;
     }
@@ -158,8 +182,21 @@ p {
     }
 
     .gif-container {
-        top: 40px;
-        width:71%;
+        top: 33px;
+        left: -42px;
+        width:61%;
         padding: 0.5em;
+    }
+    .newDiv {
+        text-align: left;
+    }
+
+    img {
+        height: 80px;
+    }
+
+    p {
+        margin: 0.1em;
+        font-size: 0.7em;
     }
 }
