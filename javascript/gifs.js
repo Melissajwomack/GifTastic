@@ -26,6 +26,7 @@ $(document).ready(function () {
 
     //What happens when you click a button
     $(document.body).on("click", ".buttons", function () {
+
         var food = $(this).attr("data-food");
         var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + food + "&api_key=dGfiE2c3mUZUhNtQ99HWn3qzCDW1GTir&limit=10";
 
@@ -34,7 +35,7 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             var results = response.data
-
+            
             for (var i = 0; i < results.length; i++) {
                 var newDiv = $("<div>");
                 var newImgDiv = $("<img>");
